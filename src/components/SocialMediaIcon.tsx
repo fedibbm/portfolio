@@ -2,7 +2,7 @@ import { IonIcon } from "@ionic/react";
 import { motion, type Variants } from "framer-motion";
 
 
-const SocialMediaIcon = ({icon, className}: {icon:string, className:string}) => {
+const SocialMediaIcon = ({icon, className, shake}: {icon:string, className:string, shake? : boolean}) => {
     const variants: Variants = {
         rest: { y: 0 },
         shake: {
@@ -13,8 +13,8 @@ const SocialMediaIcon = ({icon, className}: {icon:string, className:string}) => 
   return (
    <motion.div
                         variants={variants}
-                        initial="rest"
-                        animate="rest"
+                        initial={shake? "shake" : "rest"}
+                        animate={shake? "shake" : "rest"}
                         whileHover="shake"
                         style={{ display: "inline-block", cursor: "pointer" }}
                     >
