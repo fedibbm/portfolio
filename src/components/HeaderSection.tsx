@@ -6,6 +6,7 @@ import SocialMediaIcon from "./SocialMediaIcon";
 import HandDrawnArrowSvg from "../svg/HandDrawnSvg";
 import Particles from "../blocks/Backgrounds/Particles/Particles";
 import StarBorder from "../blocks/Animations/StarBorder/StarBorder";
+import AboutMe from "./AboutMe";
 
 const HeaderSection: React.FC = () => {
     const email = "fedibenbrahim4@gmail.com";
@@ -62,12 +63,13 @@ const HeaderSection: React.FC = () => {
                 </div>
             </div>
 
-            <div className="flex gap-10 items-start md:relative ">
-                <div className="flex flex-col items-center uppercase">
-                    <p className="font-bold text-[60px] md:text-[80px] tracking-wider text-blue-700 font-bebas text-center">
+            <div className="flex items-start md:relative pt-30">
+                <div className="flex gap-6 flex-col items-center uppercase ">
+                    <p className="font-bold text-[60px] md:text-[100px] tracking-wider text-blue-700 font-bebas text-center">
                         Fedi Ben Brahim
                     </p>
-                    <div className=" flex gap-4 items-center pt-6 absolute md:-right-1/3 md:top-7 right-4 top-0 h-0">
+
+                    <div className="md:hidden flex gap-4 items-center pt-6 absolute md:-right-1/3 md:top-7 right-4 top-0 h-0">
                         {/* Glow */}
                         <div className="absolute h-3 w-3 rounded-full bg-green-500 opacity-70 blur-sm" />
 
@@ -78,11 +80,13 @@ const HeaderSection: React.FC = () => {
                             Available
                         </p>
                     </div>
-                    <p className="font-semibold text-gray-300/90 md:text-[25px] text-[22px]  ">
+                    {/* <p className="font-semibold text-gray-300/90 md:text-[25px] text-[22px]  ">
                         <span className="underline">Full Stack</span>
                         <span className=" "> Web Developer</span>
-                    </p>
-                    <div className="pt-8 flex gap-4">
+                    </p> */}
+                    
+
+                    <div className="flex gap-4">
                         <button className=" z-1 bg-gradient-to-b p-0 from-black to-gray-900 border border-gray-800 text-white text-center text-[16px]  px-[26px] rounded-[10px] cursor-pointer">
                             See Resume
                         </button>
@@ -98,7 +102,9 @@ const HeaderSection: React.FC = () => {
                             Get In Contact
                         </StarBorder>
                     </div>
-                    <div className="bsolute left-1/2 pt-10  flex flex-col ">
+                    <AboutMe className="hidden md:block"  />
+
+                    <div className="md:hidden flex flex-col ">
                         <div className="flex items-center gap-4 relative">
                             <SocialMediaIcon
                                 icon={logoGithub}
