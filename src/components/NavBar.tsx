@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const links = ["About", "Projects", "Skills", "Contact"];
 
-const NavBar: React.FC = ({className} : {className : string}) => {
+const NavBar: React.FC<{ className?: string }> = ({ className }) => {
     const [active, setActive] = useState<string>("");
 
     useEffect(() => {
@@ -37,16 +37,20 @@ const NavBar: React.FC = ({className} : {className : string}) => {
     }, []);
 
     return (
-        <div className={`hidden md:block fixed top-6 h-16 left-1/2 -translate-x-1/2 rounded-md z-10 ${className}`}>
-            <div className="bg-white/10 h-full w-full rounded-full px-10 border  border-gray-900  shadow-white/80 shadow-[0_0_0px_rgba(0,0,0,0.3)] shadow-sp">
-                <ul className="flex justify-between items-center w-full h-full text-gray-600 px-1">
+        <div
+            className={`hidden md:block fixed bottom-2 z-1000 h-16 left-1/2 -translate-x-1/2 rounded-md  ${className}`}
+        >
+            <div className="bg-gradient-to-b from-black to-gray-800 h-full w-full rounded-sm border  border-gray-900  shadow-white/80 shadow-[0_0_0px_rgba(0,0,0,0.3)] shadow-sp">
+                <ul className="px-1 flex justify-between items-center w-full h-full text-gray-600 ">
                     {links.map((label, index) => (
                         <React.Fragment key={index}>
-                            <li className={`px-2 mx-2 transition-all duration-300 ${
-                                        label.toLowerCase() == "contact"
-                                            ? "hidden md:block"
-                                            : ""
-                                    } `}>
+                            <li
+                                className={`transition-all duration-300 ${
+                                    label.toLowerCase() == "contact"
+                                        ? "hidden md:block"
+                                        : ""
+                                } `}
+                            >
                                 <a
                                     href={
                                         label.toLowerCase() === "about"
@@ -64,25 +68,30 @@ const NavBar: React.FC = ({className} : {className : string}) => {
                                               }
                                             : undefined
                                     }
-                                    className={` px-4 py-2  rounded-md hover:bg-gray-600 hover:-translate-y-0.5 transition-transform transition-colors duration-400 cursor-pointer ${
+                                    className={`px-4 py-4 hover:bg-gray-600 hover:-translate-y-0.5 transition-transform transition-colors duration-400 cursor-pointer ${
                                         active === label.toLowerCase()
-                                            ? "bg-gray-500  text-gray-100"
+                                            ? `bg-gray-700 text-gray-100 ${
+                                                  active === "about"
+                                                      ? "rounded-l-sm"
+                                                      : active === "contact"
+                                                      ? "rounded-r-sm"
+                                                      : ""
+                                              }`
                                             : "bg-transparent text-gray-300"
-                                    } 
-                                    `}
+                                    }`}
                                 >
                                     {label}
                                 </a>
                             </li>
-                            {index < links.length - 1 && (
+                            {/* {index < links.length - 1 && (
                                 <div
-                                    className={`h-8/12 border-l border-gray-300 ${
+                                    className={`h-4/12 border-l border-gray-500 ${
                                         label.toLowerCase() == "skills"
                                             ? "hidden md:block"
                                             : ""
                                     } `}
                                 />
-                            )}
+                            )} */}
                         </React.Fragment>
                     ))}
                 </ul>
