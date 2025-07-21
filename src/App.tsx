@@ -1,6 +1,6 @@
 // import ScrollProgressBar from './components/ScrollProgressBar'
 import HomePage from "./pages/HomePage";
-import Container from "./Container";
+// import Container from "./Container";
 import ClickSpark from "./blocks/Animations/ClickSpark/ClickSpark";
 
 function App() {
@@ -12,10 +12,10 @@ function App() {
             sparkCount={8}
             duration={400}
         >
-            <Container>
+            {/* <Container> */}
                 {/* <ScrollProgressBar /> */}
                 <HomePage />
-            </Container>
+            {/* </Container> */}
         </ClickSpark>
     );
 }

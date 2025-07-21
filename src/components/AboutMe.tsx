@@ -24,11 +24,11 @@ const AboutMe: React.FC<{ className: string }> = ({ className }) => {
     }, [copied]);
     return (
         <div
-            className={`bg-gray-800 w-[min(95%,500px)] text-white normal-case p-8 text relative ${className}`}
+            className={`bg-gradient-to-r from-gray-800  to-white/10 lg:to-gray-800 w-[min(95%,600px)]  text-white normal-case p-8  text relative ${className}`}
         >
             <div className="flex w-full justify-between pb-4">
                 <div className="flex gap-4 items-center">
-                    {/* <h1 className="md:text-2xl text-xl uppercase  italicfont-bold">About me</h1> */}
+                    {/* <h1 className="lg:text-2xl text-xl uppercase  italicfont-bold">About me</h1> */}
 
                     <div className="flex gap-2 items-center ">
                         {/* Glow */}
