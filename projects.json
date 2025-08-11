@@ -12,13 +12,17 @@
             "name": "Portfolio",
             "description": "A personal portfolio website showcasing my projects and skills. Built with React and styled with Tailwind CSS, featuring a responsive layout, dark mode support, and smooth animations.",
             "cover": "/img/projects/portfolio_cover.png",
-            "technologies": ["react", "tailwind"]
+            "technologies": ["react", "tailwind"],
+            "source":"https://github.com/fedibbm/portfolio",
+            "live":"/"
         },
         {
             "name": "Pawhaven",
-            "description": "A pet care management platform that helps connect pet owners with reliable pet sitters. Features include booking management, real-time messaging, and secure payment processing, all wrapped in an intuitive user interface.",
-            "cover": "/img/projects/portfolio_cover.png",
-            "technologies": ["react", "tailwind"]
+            "description": "A simple landing page for a fictional pet rescue organization, designed to showcase adoptable pets and provide information about the rescue's mission. Built with React and styled with Tailwind CSS for a modern, responsive experience.",
+            "cover": "/img/projects/pawhaven_screenshot.png",
+            "technologies": ["react", "tailwind"],
+            "live": "https://paw-haven-landing.vercel.app/",
+            "source":"https://github.com/fedibbm/PawHavenLanding"
         }
     ]
 }

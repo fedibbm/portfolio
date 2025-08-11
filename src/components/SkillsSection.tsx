@@ -2,17 +2,24 @@ import { useState } from "react";
 import SkillBlock from "./SkillBlock";
 import AboutMe from "./AboutMe";
 const SkillsSection: React.FC = () => {
-    const skillsNames = ["frontend", "backend", "cloud"];
+    const skillsNames = ["frontend", "backend"];
     const [selectedSkillTab, setSelectedSkillTab] =
         useState<string>("frontend");
     const skillsMap: Record<string, Record<string, number>> = {
         frontend: {
             "HTML/CSS": 99,
             Javascript: 90,
+            Tailwind: 90,
             Typescript: 80,
             React: 80,
-            Redux: 80,
-            Vuejs: 80,
+            NextJs: 80,
+            Redux: 50,
+        },
+        backend: {
+            expressjs: 80,
+            NodeJs: 70,
+            NestJs: 60,
+            flask:50
         },
     };
 
@@ -31,8 +38,9 @@ const SkillsSection: React.FC = () => {
                                 <button
                                     key={index}
                                     className={`border border-white rounded-md p-2 cursor-pointer capitalize ${
-                                        skill === selectedSkillTab &&
-                                        "bg-white text-gray-800"
+                                        skill === selectedSkillTab
+                                            ? "bg-white text-gray-800"
+                                            : ""
                                     }`}
                                     onClick={() => {
                                         setSelectedSkillTab(skill);
