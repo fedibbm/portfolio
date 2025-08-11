@@ -5,7 +5,7 @@
             "description": "A modern blogging platform built with Next.js and Strapi, featuring a clean and responsive design. The platform supports markdown content, image optimization, and dynamic routing for a seamless user experience.",
             "cover": "/img/projects/blog_cover.png",
             "technologies": ["Nextjs", "strapi", "react", "tailwind"],
-            "live": "https://github.com/fedibbm/Fedi_blog"
+            "source": "https://github.com/fedibbm/Fedi_blog"
         },
         {
             "name": "Portfolio",
