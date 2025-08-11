@@ -56,11 +56,11 @@ const AboutMe: React.FC<{ className: string }> = ({ className }) => {
                 </div>
             </div>
             <p className="italic">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Dolore, cupiditate optio reiciendis repudiandae quidem mollitia
-                eligendi incidunt eveniet facere quisquam. Quis, nobis eveniet?
-                Sint, perspiciatis? Excepturi error tempore necessitatibus
-                doloribus.
+                I’m a web developer who enjoys building websites that look good,
+                work smoothly, and make sense to use. I work mostly with React
+                and Next.js, and I like finding simple solutions to tricky
+                problems. For me, it’s about creating something that feels
+                solid, runs fast, and is pleasant for people to interact with.
             </p>
             <div className="absolute  top-full xl:flex flex-col hidden pt-4 -right-10  ">
                 <div
@@ -68,7 +68,9 @@ const AboutMe: React.FC<{ className: string }> = ({ className }) => {
                     className="  flex items-center "
                     style={{ cursor: `url(${copyCursor}) 0 0, auto` }}
                 >
-                    <p className="text-gray-300 font- italic text-xl">{email}</p>
+                    <p className="text-gray-300 font- italic text-xl">
+                        {email}
+                    </p>
                     <p
                         className={` px-2 transition-all duration-300 text-gray-100 rounded-md  ${
                             copied ? "opacity-100" : "opacity-0"

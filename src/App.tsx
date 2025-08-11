@@ -2,6 +2,7 @@
 import HomePage from "./pages/HomePage";
 // import Container from "./Container";
 import ClickSpark from "./blocks/Animations/ClickSpark/ClickSpark";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
     return (
@@ -14,7 +15,9 @@ function App() {
         >
             {/* <Container> */}
                 {/* <ScrollProgressBar /> */}
-                <HomePage />
+             <Routes>
+                 <Route path="/"  element={<HomePage />} />
+             </Routes>
             {/* </Container> */}
         </ClickSpark>
     );

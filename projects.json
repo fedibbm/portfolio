@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "name": "Fedi Blog",
+            "description": "A modern blogging platform built with Next.js and Strapi, featuring a clean and responsive design. The platform supports markdown content, image optimization, and dynamic routing for a seamless user experience.",
+            "cover": "/img/projects/blog_cover.png",
+            "technologies": ["Nextjs", "strapi", "react", "tailwind"],
+            "live": "/live/link",
+            "source": "https://www.github.com"
+        },
+        {
+            "name": "Portfolio",
+            "description": "A personal portfolio website showcasing my projects and skills. Built with React and styled with Tailwind CSS, featuring a responsive layout, dark mode support, and smooth animations.",
+            "cover": "/img/projects/portfolio_cover.png",
+            "technologies": ["react", "tailwind"]
+        },
+        {
+            "name": "Pawhaven",
+            "description": "A pet care management platform that helps connect pet owners with reliable pet sitters. Features include booking management, real-time messaging, and secure payment processing, all wrapped in an intuitive user interface.",
+            "cover": "/img/projects/portfolio_cover.png",
+            "technologies": ["react", "tailwind"]
+        }
+    ]
+}
