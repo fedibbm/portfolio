@@ -5,7 +5,7 @@ const links = ["About", "Skills",  "Projects", "Contact"];
 const NavBar: React.FC<{ className?: string }> = ({ className }) => {
     const [active, setActive] = useState<string>("");
     const [navbarToTop, setNavbarToTop] = useState<boolean>(false);
-    const [navbarFullWidth, setNavbarFullWidth] = useState<boolean>(false);
+    // const [navbarFullWidth, setNavbarFullWidth] = useState<boolean>(false);
     const [navbarItemsEnd, setNavbarItemsEnd] = useState<boolean>(false);
 
     useEffect(() => {
@@ -37,22 +37,22 @@ const NavBar: React.FC<{ className?: string }> = ({ className }) => {
             } else {
                 setNavbarToTop(false);
             }
-            if (
-                window.scrollY - 40 >=
-                document.getElementById("navbar-waypoint")!.offsetTop
-            ) {
-                setNavbarFullWidth(true);
-            } else {
-                setNavbarFullWidth(false);
-            }
-            if (
-                window.scrollY - 100 >=
-                document.getElementById("navbar-waypoint")!.offsetTop
-            ) {
-                setNavbarItemsEnd(true);
-            } else {
-                setNavbarItemsEnd(false);
-            }
+            // if (
+            //     window.scrollY - 40 >=
+            //     document.getElementById("navbar-waypoint")!.offsetTop
+            // ) {
+            //     setNavbarFullWidth(true);
+            // } else {
+            //     setNavbarFullWidth(false);
+            // }
+            // if (
+            //     window.scrollY - 100 >=
+            //     document.getElementById("navbar-waypoint")!.offsetTop
+            // ) {
+            //     setNavbarItemsEnd(true);
+            // } else {
+            //     setNavbarItemsEnd(false);
+            // }
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -109,7 +109,7 @@ const NavBar: React.FC<{ className?: string }> = ({ className }) => {
                                                   }
                                                 : undefined
                                         }
-                                        className={`px-4 py-4 hover:bg-gray-600 hover:-translate-y-0.5 transition-transform transition-colors duration-400 cursor-pointer ${
+                                        className={`px-4 py-4 hover:bg-gray-600 hover:-translate-y-0.5 transition-all duration-400 cursor-pointer ${
                                             active === label.toLowerCase()
                                                 ? `bg-gray-700 text-gray-100 ${
                                                       active === "about"
