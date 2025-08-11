@@ -6,7 +6,7 @@ const NavBar: React.FC<{ className?: string }> = ({ className }) => {
     const [active, setActive] = useState<string>("");
     const [navbarToTop, setNavbarToTop] = useState<boolean>(false);
     // const [navbarFullWidth, setNavbarFullWidth] = useState<boolean>(false);
-    const [navbarItemsEnd, setNavbarItemsEnd] = useState<boolean>(false);
+    // const [navbarItemsEnd, setNavbarItemsEnd] = useState<boolean>(false);
 
     useEffect(() => {
         const handleScroll = () => {
