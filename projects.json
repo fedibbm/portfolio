@@ -23,6 +23,13 @@
             "technologies": ["react", "tailwind"],
             "live": "https://paw-haven-landing.vercel.app/",
             "source":"https://github.com/fedibbm/PawHavenLanding"
+        },
+        {
+            "name": "stylecrafter",
+            "description": "A modern blogging platform built with Next.js and Strapi, featuring a clean and responsive design. The platform supports markdown content, image optimization, and dynamic routing for a seamless user experience.",
+            "cover": "/img/projects/stylecrafter_screenshot.png",
+            "technologies": ["Nextjs", "strapi", "react", "tailwind"],
+            "source": "https://github.com/fedibbm/StyleCrafter"
         }
     ]
 }

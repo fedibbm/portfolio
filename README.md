@@ -2,11 +2,11 @@
 
 My personal portfolio website built with React, showcasing my projects and skills.
 
-## 🌐 Live Demo
+##  Live Demo
 
 Visit my portfolio at: [https://fedi.dev](https://fedi.dev)
 
-## 📸 Preview
+##  Preview
 
 ![Portfolio Screenshot](./portfolio_screenshot.png)
 
@@ -16,19 +16,19 @@ Visit my portfolio at: [https://fedi.dev](https://fedi.dev)
 - CSS3
 - Vite
 
-## 🚀 Features
+##  Features
 
 - Responsive design
 - Project showcase
 - Skills section
 - Contact information
 
-## ⚙️ Setup
+##  Setup
 
 1. Clone the repository
 2. Install dependencies: `npm install`
 3. Run development server: `npm run dev`
 
-## 📝 License
+##  License
 
 MIT License

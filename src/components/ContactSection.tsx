@@ -3,7 +3,7 @@ import { TfiNewWindow } from "react-icons/tfi";
 const ContactSection: React.FC = () => {
     return (
         <div className="py-10 md:pt-30" id="contact">
-            <div className="rounded-md flex flex-col  gap-10 items-center relative pb-400">
+            <div className="rounded-md flex flex-col  gap-10 items-center relative ">
                 <div className="w-[min(95%,900px)] flex flex-col gap-10 pt-10 items-center">
                     <h1 className="text-white font-bold text-3xl capitalize font-bebas px-4 self-start">
                         Contact Me
