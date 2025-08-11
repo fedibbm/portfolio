@@ -31,23 +31,26 @@ const HeaderSection: React.FC = () => {
                 disableRotation={false}
             />
             {/* email */}
-           
-            
 
             <div className="flex lg:justify-center gap-14 lg:px-20 items-center">
                 <AboutMe className="hidden lg:block" />
-                
+
                 <div className="flex items-start lg:relative ">
                     <div className="flex gap-9 flex-col items-center lg:items-start uppercase">
                         <div className="font-bold  text-left uppercase text-white font-bebas">
-                            <p className="lg:text-[60px] text-[40px]">Hello, <span className="text-gray-50 text-[40px] lg:text-[60px] lg:hidden">
+                            <p className="lg:text-[60px] text-[40px]">
+                                Hello,{" "}
+                                <span className="text-gray-50 text-[40px] lg:text-[60px] lg:hidden">
                                     I'm{" "}
-                                </span></p>
+                                </span>
+                            </p>
                             <div className="   text-blue-700 font-bebas  text-[60px]/15 lg:text-[90px]/20 flex flex-col lg:flex-row gap-6 ">
                                 <p className="text-gray-50 text-[50px] lg:text-[60px] hidden lg:block">
                                     I'm{" "}
                                 </p>
-                                <p className="bg-gradient-to-r from-violet-600  to-blue-500 text-transparent  bg-clip-text">Fedi Ben Brahim</p>
+                                <p className="bg-gradient-to-r from-violet-600  to-blue-500 text-transparent  bg-clip-text">
+                                    Fedi Ben Brahim
+                                </p>
                             </div>
                         </div>
 
@@ -74,9 +77,15 @@ const HeaderSection: React.FC = () => {
                             <span className="pl-2 text-[10vw]"> work </span> */}
                         </p>
                         <div className="flex gap-4">
-                            <button className=" z-1 bg-gradient-to-b p-0 from-black to-gray-900 border border-gray-800 text-white text-center text-[16px]  px-[26px] rounded-[10px] cursor-pointer">
-                                See Resume
+                            <button className="z-1 bg-gradient-to-b from-black to-gray-900 border border-gray-800 text-white rounded-[10px] cursor-pointer relative w-fit">
+                                <a
+                                    href="/pdf/Fedi-Ben-Brahim-CV.pdf"
+                                    className="px-[26px] py-2 w-full h-full text-center text-[16px] flex items-center justify-center"
+                                >
+                                    See Resume
+                                </a>
                             </button>
+
                             {/* <button className="px-4 py-2 bg-gray-300 rounded-sm border-gray-400 border transition-colors hover:border-gray-800 cursor-pointer text-gray-700 hover:text-black">
                                 Get In Contact
                             </button> */}
