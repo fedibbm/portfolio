@@ -86,7 +86,7 @@ const HeaderSection: React.FC = () => {
                                 color="rgba(255, 255, 255, 0.6)"
                                 speed="2s"
                             >
-                                Schedule a chat
+                                <a href="#contact">Contact Me</a>
                             </StarBorder>
                         </div>
                         <div className="lg:hidden flex flex-col ">

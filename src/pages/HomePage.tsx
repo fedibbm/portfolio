@@ -3,6 +3,7 @@ import HeaderSection from "../components/HeaderSection";
 import SkillsSection from "../components/SkillsSection";
 import ProjectsSection from "../components/ProjectsSection";
 import Particles from "../blocks/Backgrounds/Particles/Particles";
+import ContactSection from "../components/ContactSection";
 const HomePage: React.FC = () => {
     return (
 
@@ -25,6 +26,7 @@ const HomePage: React.FC = () => {
                     <div className="flex flex-col gap-8 bg-[#1e2938]">
                         <SkillsSection />
                         <ProjectsSection />
+                        <ContactSection />
                     </div>
                 </div>
         </div>

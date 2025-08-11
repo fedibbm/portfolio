@@ -15,7 +15,7 @@ export default function ProjectCard({ project }: { project: projectType }) {
     const [projectHovered, setProjectHovered] = useState<boolean>(false);
     return (
         <div
-            className="relative overflow-hidden w-[min(500px,95%)] bg-gray-900 rounded-md text-gray-200 h-115  justify-self-center shadow-white/10 shadow-sm bo/rder border-gray-200/40 "
+            className="relative overflow-hidden w-[min(500px,95%)]  bg-gradient-to-br from-gray-800 via-black/50 to-gray-800 rounded-md text-gray-200 h-115  justify-self-center shadow-white/4 shadow-lg bo/rder border-gray-200/40 "
             onMouseLeave={() => {
                 setProjectHovered(false);
             }}
