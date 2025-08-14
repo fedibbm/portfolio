@@ -4,7 +4,7 @@ My personal portfolio website built with React, showcasing my projects and skill
 
 ##  Live Demo
 
-Visit my portfolio at: [https://fedi.dev](https://fedi.dev)
+Visit my portfolio at: [https://portfolio-gold-gamma-96.vercel.app/](https://portfolio-gold-gamma-96.vercel.app/)
 
 ##  Preview
 
